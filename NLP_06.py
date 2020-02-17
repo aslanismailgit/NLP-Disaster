@@ -32,7 +32,6 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import RidgeClassifierCV
 from sklearn.linear_model import Perceptron
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.datasets import make_classification
 #%%
 path="/Users/ismailaslan/Desktop/Python/NLPDisaster"
 
