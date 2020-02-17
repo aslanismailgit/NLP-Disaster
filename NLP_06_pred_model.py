@@ -11,8 +11,8 @@ log regression
 log l1
 
 """
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import numpy as np 
+import pandas as pd 
 from sklearn import feature_extraction, linear_model, model_selection, preprocessing
 import matplotlib.pyplot as plt
 import time
@@ -30,7 +30,6 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import RidgeClassifierCV
 from sklearn.linear_model import Perceptron
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.datasets import make_classification
 #%%
 path1="/Users/ismailaslan/Desktop/Python/NLPDisaster/my_models_02/"
 X_df = pd.read_csv(path1 + "model_preds.csv")
