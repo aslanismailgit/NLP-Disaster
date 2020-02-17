@@ -33,12 +33,6 @@ test_df = pd.read_csv("/Users/ismailaslan/Run_mac/data/test.csv")
 #from sklearn.feature_extraction.text import TfidfTransformer
 
 dim=train_df.shape[0]
-count_vectorizer = feature_extraction.text.CountVectorizer()
-train_vectors = count_vectorizer.fit_transform(train_df["text"][0:dim])
-test_vectors = count_vectorizer.transform(test_df["text"][0:dim])
-train_vectors_array=train_vectors.toarray()
-test_vectors_array=test_vectors.toarray()
-
 bigram_vectorizer = CountVectorizer(ngram_range=(1, 2),
                                     token_pattern=r'\b\w+\b', min_df=1)
 
