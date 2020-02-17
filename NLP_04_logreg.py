@@ -16,16 +16,13 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 from sklearn import feature_extraction, linear_model, model_selection, preprocessing
 import matplotlib.pyplot as plt
 import time
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
 #%%
 train_df = pd.read_csv("./data/train.csv")
 test_df = pd.read_csv("./data/test.csv")
-#%%
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
 
 dim=train_df.shape[0]
-
-
 bigram_vectorizer = CountVectorizer(ngram_range=(1, 2),
                                     token_pattern=r'\b\w+\b', min_df=1)
 
