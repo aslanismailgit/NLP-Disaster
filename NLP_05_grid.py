@@ -2,6 +2,7 @@
 no good results
 used below referenced code
 """
+# adopted from :
 # Author: Olivier Grisel <olivier.grisel@ensta.org>
 #         Peter Prettenhofer <peter.prettenhofer@gmail.com>
 #         Mathieu Blondel <mathieu@mblondel.org>
